@@ -6,6 +6,33 @@ Kita mulai dari konsep paling dasar: API, HTTP, struktur file backend, serta too
 
 ---
 
+## 🧰 Tools yang Digunakan
+
+| Alat      | Keterangan                                 |
+|-----------|--------------------------------------------|
+| Node.js   | Menjalankan kode JavaScript di backend     |
+| VS Code   | Editor kode dengan integrasi terminal      |
+| Terminal  | Menjalankan perintah CLI & server          |
+| Postman   | Menguji dan mengirim request ke API        |
+| curl      | Alternatif Postman untuk test API di CLI   |
+| Git/GitHub| (Opsional) Version control & kolaborasi    |
+
+---
+
+## ✅ Checklist Goal Exercise (Tracker Kadet)
+
+- [ ] Memahami konsep HTTP, API, request, response, dan status code
+- [ ] Bisa membuat server sederhana dengan Node.js (tanpa framework)
+- [ ] Mampu menerima dan membalas request GET/POST dengan data JSON
+- [ ] Mengelola input/output di terminal (CLI) dan file
+- [ ] Mengimplementasikan routing manual dan penyimpanan data di file JSON
+- [ ] Memecah kode backend menjadi struktur modular (server, routes, controllers, utils, data)
+- [ ] Menangani error dan validasi data dengan baik
+- [ ] Menggunakan tools (Postman/curl) untuk testing API
+- [ ] Menulis log dan dokumentasi sederhana
+
+---
+
 ## 🎯 Tujuan Level
 
 - Mengenal peran backend dalam aplikasi modern
@@ -30,7 +57,7 @@ newcomer/
 
 ## 📌 Cara Mengerjakan
 
-1. Buka folder `ex01-intro-api/`
+1. Buka folder exercise sesuai urutan
 2. Baca `README.md` (instruksi tugas) dan `fundamental.md` (penjelasan konsep)
 3. Kerjakan di lokal menggunakan Node.js tanpa framework dulu
 4. Tes menggunakan Postman atau browser (untuk GET)

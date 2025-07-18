@@ -1,57 +1,82 @@
-# Exercise 02: CLI & Input/Output (I/O) 🖥️
+# 📝 Exercise 02: Asisten Pendaftaran CLI – Belajar Input/Output dari Nol
 
-> **Track**: Development\
-> **Specialty**: Backend\
-> **Level**: 🌱 Newcomer\
-> **Estimated Time**: 1–2 jam\
+> **Track**: Development  
+> **Specialty**: Backend  
+> **Level**: 🌱 Newcomer  
+> **Estimated Time**: 1–2 jam  
 > **Last Updated**: Juni 2025
 
 ---
 
-## 🎯 Tujuan Pembelajaran
+## 🧰 Tools yang Digunakan
 
-- Mengenal cara kerja program berbasis CLI (Command Line Interface)
-- Belajar menangkap input dari pengguna via terminal
-- Memproses argumen (`process.argv`) dan input interaktif (`readline`)
-- Menampilkan output yang informatif, terstruktur, dan dinamis
-
----
-
-## 📖 Studi Kasus
-
-> Kamu ditugaskan membuat tool CLI sederhana bernama `form-wizard.js` yang menjalankan survey interaktif di terminal. Tool ini akan menanyakan nama, umur, dan minat pengguna, lalu menampilkan hasilnya secara rapi.
+| Alat      | Keterangan                                 |
+|-----------|--------------------------------------------|
+| Node.js   | Menjalankan kode JavaScript di backend     |
+| VS Code   | Editor kode dengan integrasi terminal      |
+| Terminal  | Menjalankan perintah CLI & server          |
 
 ---
 
-## 🛠 Tools & Setup
+## ✅ Checklist Goal Exercise
 
-| Alat     | Deskripsi                        |
-| -------- | -------------------------------- |
-| Node.js  | Menjalankan program CLI          |
-| Terminal | Jalankan perintah dan input data |
-| VS Code  | Editor dengan integrasi terminal |
+- [ ] Program CLI menyapa pengguna di terminal
+- [ ] Menerima input nama, umur, minat (readline)
+- [ ] Validasi input (nama tidak kosong, umur angka)
+- [ ] Menampilkan resume pendaftaran di terminal
+- [ ] (Bonus) Simpan hasil ke file `result.txt`
+- [ ] (Bonus) Argumen `--lang` untuk bahasa
 
-### Struktur Awal
+---
 
-```bash
-mkdir exercise-02-cli-io
-cd exercise-02-cli-io
-npm init -y
-touch form-wizard.js
+## 📖 Studi Kasus: Asisten Pendaftaran Acara Keluarga
+
+Bayangkan kamu membuat **asisten pendaftaran digital** yang berjalan di terminal (CLI) untuk acara keluarga. Asisten ini akan menanyakan nama, umur, dan minat peserta, lalu menampilkan resume pendaftaran di layar. Seperti panitia yang mencatat tamu satu per satu, tapi serba otomatis!
+
+---
+
+## 🎯 Goal Latihan
+
+Setelah latihan ini, kamu akan:
+- Memahami cara kerja CLI dan input/output di Node.js
+- Bisa membuat program yang menerima input dari pengguna
+- Menampilkan output yang rapi dan informatif di terminal
+- Siap membangun tool CLI sederhana untuk kebutuhan apapun
+
+---
+
+## 📋 Checklist Langkah
+
+1. **Buat folder project dan file utama:**
+   ```bash
+   mkdir asisten-pendaftaran-cli
+   cd asisten-pendaftaran-cli
+   npm init -y
+   touch form-wizard.js
+   ```
+2. **Tampilkan sapaan awal di terminal**
+3. **Tanyakan nama, umur, dan minat peserta (gunakan readline)**
+4. **Setelah semua terisi, tampilkan resume pendaftaran di terminal**
+5. **Validasi:**
+   - Nama tidak boleh kosong
+   - Umur harus angka
+6. **(Bonus) Simpan hasil ke file `result.txt`**
+7. **(Bonus) Tambahkan argumen `--lang` untuk bahasa**
+
+---
+
+## 🗂️ Struktur File Disarankan
+
+```
+asisten-pendaftaran-cli/
+├── form-wizard.js
+├── README.md
+└── fundamental.md
 ```
 
 ---
 
-## 🔧 Tugas Utama
-
-Buat file `form-wizard.js` yang:
-
-1. Menyapa pengguna: "Selamat datang di Form Wizard!"
-2. Bertanya:
-   - Nama lengkap
-   - Usia
-   - Minat utama dalam IT (Frontend, Backend, Data, UI/UX, lainnya)
-3. Setelah input, tampilkan output seperti:
+## 🧪 Contoh Output CLI
 
 ```
 📋 Resume Pendaftaran:
@@ -61,55 +86,22 @@ Minat  : Backend
 Terima kasih sudah mengisi form!
 ```
 
-4. Gunakan `readline` module bawaan Node.js
-5. Pastikan CLI tetap berjalan hingga semua pertanyaan selesai
+---
+
+## 💡 Tips Pro & Troubleshooting
+- Jika CLI tidak jalan, cek penulisan kode dan jalankan dengan `node form-wizard.js`
+- Gunakan `console.log()` untuk debug
+- Cek hasil file dengan `cat result.txt`
+- Untuk argumen, cek dengan `process.argv`
 
 ---
 
-## ✨ Bonus Challenge
-
-- Tambahkan validasi usia agar harus berupa angka
-- Simpan hasil input ke file `result.txt`
-- Tambahkan argumen opsional seperti:
-
-```bash
-node form-wizard.js --lang=en
-```
-
-Agar pesan tampil dalam Bahasa Inggris
+## 🔗 Referensi
+- [Node.js readline module](https://nodejs.org/api/readline.html)
+- [Command Line Arguments – Node.js Docs](https://nodejs.org/en/learn/getting-started/how-to-parse-command-line-arguments/)
+- [Zellwk CLI tutorial](https://zellwk.com/blog/cli/)
 
 ---
 
-## 📁 Struktur File Disarankan
-
-```
-exercise-02-cli-io/
-├── form-wizard.js
-├── README.md
-├── fundamental.md
-└── result.txt (optional)
-```
-
----
-
-## ✅ Submission
-
-```
-submissions/backend/[username]/exercise-02-cli-io/
-├── form-wizard.js
-├── README.md
-└── REFLECTION.md
-```
-
----
-
-## 💡 Tips & Resources
-
-- Gunakan `readline.question()` secara berurutan dengan callback atau `async/await`
-- Format output menggunakan template string agar rapi
-- Cek validasi angka dengan `Number.isNaN()` atau regex
-
----
-
-Happy Hacking via Terminal ⚡
+> "CLI itu seperti ngobrol langsung dengan komputer. Semakin sering latihan, semakin luwes kamu mengendalikan sistem!"
 
