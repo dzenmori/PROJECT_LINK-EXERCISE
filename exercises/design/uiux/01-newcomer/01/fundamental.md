@@ -4,6 +4,32 @@ UI (User Interface) dan UX (User Experience) adalah dua istilah yang sering digu
 
 ---
 
+## 🛠 Tools yang Digunakan
+
+| Tool         | Fungsi Utama                                 |
+|--------------|----------------------------------------------|
+| Figma        | Membuat anotasi visual, wireframe, analisis  |
+| Whimsical    | Alternatif wireframe/diagram sederhana       |
+| Google Fonts | Referensi tipografi                          |
+| Screenshot   | Bukti observasi aplikasi/website             |
+
+---
+
+## 📚 Glossary Istilah Penting
+
+| Istilah | Penjelasan Sederhana |
+|---------|----------------------|
+| UI      | Tampilan visual produk digital (warna, tombol, layout) |
+| UX      | Pengalaman & kenyamanan pengguna saat memakai produk  |
+| Wireframe | Sketsa kasar struktur tampilan sebelum desain final |
+| Hierarchy | Urutan prioritas visual, mana yang harus dilihat dulu |
+| Navigasi | Cara berpindah antar halaman/menu di aplikasi        |
+| CTA     | Call to Action, tombol/aksi utama yang diinginkan    |
+| Mockup  | Desain visual mendekati hasil akhir                  |
+| Prototipe | Simulasi interaktif dari desain                    |
+
+---
+
 ## 🎨 UI (User Interface)
 
 UI adalah **tampilan visual** dari produk digital. Fokusnya pada *bagaimana sesuatu terlihat*.
@@ -63,6 +89,24 @@ UX adalah **keseluruhan pengalaman pengguna saat menggunakan produk**. Fokusnya 
 - **UX** = rasa makanan, kemudahan pesan, keramahan pelayan
 
 Keduanya harus bekerja sama agar pengalamanmu menyenangkan dan efisien.
+
+---
+
+## 📝 Checklist Learning Outcome
+
+- [ ] Bisa membedakan elemen UI dan UX pada aplikasi nyata
+- [ ] Memahami peran dan tujuan UI vs UX
+- [ ] Menggunakan tools (Figma, Whimsical, Google Fonts) untuk observasi dan anotasi
+- [ ] Membuat analisis sederhana tentang kelebihan/kekurangan UI/UX
+- [ ] Menjelaskan hasil observasi dengan bahasa awam
+
+---
+
+## 💡 Tips & Best Practice
+- Jangan hanya menilai dari tampilan, perhatikan juga kemudahan dan logika penggunaan
+- Gunakan anotasi visual (Figma/Whimsical) untuk menandai elemen UI/UX
+- Diskusikan hasil observasi dengan teman/mentor untuk memperluas sudut pandang
+- Cek referensi desain profesional untuk inspirasi
 
 ---
 

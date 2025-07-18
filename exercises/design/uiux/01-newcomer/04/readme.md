@@ -7,6 +7,29 @@
 
 ---
 
+## 🛠 Tools yang Digunakan
+
+| Tool         | Keterangan                                 |
+|--------------|--------------------------------------------|
+| Figma        | Membuat wireframe, anotasi, layout         |
+| Whimsical    | Alternatif wireframe/diagram sederhana     |
+| Miro         | Kolaborasi wireframe & flow                |
+| Screenshot   | Bukti observasi struktur homepage          |
+
+---
+
+## ✅ Checklist Goal Exercise
+
+- [ ] Membuat wireframe low-fidelity homepage (desktop)
+- [ ] Menyusun elemen UI secara strategis (UX-first)
+- [ ] Menerapkan prinsip hierarki, navigasi, dan CTA
+- [ ] Menambahkan anotasi alasan struktur
+- [ ] (Bonus) Tambahkan layout responsif (mobile/tablet)
+- [ ] (Bonus) Buat flow mini (user klik CTA → form)
+- [ ] (Bonus) Tambahkan bagian dinamis (FAQ/accordion)
+
+---
+
 ## 🎯 Tujuan Latihan
 
 - Membuat wireframe low-fidelity untuk halaman utama (homepage)

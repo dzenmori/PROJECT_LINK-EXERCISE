@@ -4,6 +4,32 @@ Wireframe adalah kerangka dasar dari tampilan aplikasi atau website. Fungsinya b
 
 ---
 
+## 🛠 Tools yang Digunakan
+
+| Tool         | Fungsi Utama                                 |
+|--------------|----------------------------------------------|
+| Figma        | Membuat wireframe, anotasi, layout           |
+| Whimsical    | Alternatif wireframe/diagram sederhana       |
+| Miro         | Kolaborasi wireframe & flow                  |
+| Screenshot   | Bukti observasi struktur homepage            |
+
+---
+
+## 📚 Glossary Istilah Penting
+
+| Istilah      | Penjelasan Sederhana |
+|--------------|----------------------|
+| Wireframe    | Sketsa kasar struktur tampilan sebelum desain final |
+| UX-first     | Fokus ke pengalaman pengguna sebelum visual |
+| CTA          | Call to Action, tombol/aksi utama           |
+| Hierarki     | Urutan prioritas visual, mana yang harus dilihat dulu |
+| Navigasi     | Cara berpindah antar halaman/menu           |
+| Anotasi      | Catatan/penjelasan di atas wireframe        |
+| Responsive   | Layout yang menyesuaikan ukuran layar        |
+| Flow         | Urutan langkah/tindakan pengguna            |
+
+---
+
 ## 🧱 Apa Itu Wireframe?
 
 Wireframe = blueprint. Ia membantu:
@@ -22,16 +48,13 @@ Wireframe = blueprint. Ia membantu:
 
 ---
 
-## 🎯 Tujuan Wireframe
+## 🎯 Checklist Learning Outcome
 
-- Menunjukkan urutan elemen sesuai prioritas pengguna
-- Menandai titik aksi penting (Call to Action / CTA)
-- Memetakan pengalaman dari awal hingga selesai
-
-Contoh alur homepage:
-```
-[Logo + Nav] → [Hero Title + CTA] → [Highlight Program] → [Testimoni] → [Footer]
-```
+- [ ] Memahami konsep wireframe dan UX-first
+- [ ] Bisa membuat wireframe low-fidelity (Figma/Whimsical)
+- [ ] Menjelaskan alasan struktur dan urutan elemen
+- [ ] Menggunakan tools (Figma, Whimsical, Miro) untuk wireframe
+- [ ] Membuat wireframe yang mudah dipahami pengguna awam
 
 ---
 
@@ -59,6 +82,7 @@ Contoh alur homepage:
 - Fokus pada alur & urutan
 - Tambahkan label elemen (misal: "CTA: Gabung Sekarang")
 - Prioritaskan informasi → bukan dekorasi
+- Uji wireframe ke teman/keluarga: apakah mereka paham alurnya?
 
 ---
 

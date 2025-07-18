@@ -4,6 +4,36 @@ Desain bukan hanya tentang "terlihat keren", tapi tentang **mewakili kepribadian
 
 ---
 
+## 🛠 Tools yang Digunakan
+
+| Tool         | Fungsi Utama                                 |
+|--------------|----------------------------------------------|
+| Figma        | Membuat style guide, preview warna/font      |
+| Google Fonts | Referensi dan pairing tipografi              |
+| Fontpair.co  | Inspirasi kombinasi font                     |
+| Coolors.co   | Generator palet warna                        |
+| Screenshot   | Bukti observasi brand lain                   |
+
+---
+
+## 📚 Glossary Istilah Penting
+
+| Istilah      | Penjelasan Sederhana |
+|--------------|----------------------|
+| Palet Warna  | Kumpulan warna utama yang dipakai brand |
+| Brand Color  | Warna utama identitas produk            |
+| Secondary    | Warna pendukung, bukan utama            |
+| Neutral      | Warna netral (putih, abu, hitam)        |
+| Alert        | Warna untuk pesan penting (error/sukses)|
+| Typography   | Seni memilih dan menyusun font/teks     |
+| Heading      | Judul utama, biasanya font besar/tebal  |
+| Body         | Teks isi, font lebih kecil dan readable |
+| Style Guide  | Dokumen aturan visual brand             |
+| Contrast     | Perbedaan terang/gelap antar warna      |
+| Branding     | Identitas visual & emosi produk         |
+
+---
+
 ## 🎨 Warna dalam UI/UX
 
 Warna adalah bahasa visual yang menyampaikan emosi dan makna.
@@ -55,10 +85,22 @@ Branding = identitas visual dan emosional produk. Termasuk:
 
 ---
 
-## 🧠 Tips
+## 📝 Checklist Learning Outcome
+
+- [ ] Memahami prinsip pemilihan warna dan font
+- [ ] Bisa membuat palet warna dan kombinasi tipografi
+- [ ] Menggunakan tools (Figma, Google Fonts, Coolors) untuk style guide
+- [ ] Menjelaskan alasan visual branding secara logis
+- [ ] Membuat style guide mini yang mudah dipahami
+
+---
+
+## 💡 Tips & Best Practice
 - Gunakan token warna (primary, neutral, error)
 - Simulasikan dark mode sedari awal
 - Gunakan preview UI kecil (button, card, tag) untuk mengetes gaya kamu
+- Uji kontras warna di WebAIM untuk aksesibilitas
+- Cari inspirasi dari brand besar, tapi sesuaikan dengan konteks produkmu
 
 ---
 
