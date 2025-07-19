@@ -4,6 +4,31 @@ Layout dan visual hierarchy adalah fondasi penting dari desain antarmuka. Tanpa 
 
 ---
 
+## 🛠 Tools yang Digunakan
+
+| Tool         | Fungsi Utama                                 |
+|--------------|----------------------------------------------|
+| Figma        | Membuat wireframe, grid, anotasi visual      |
+| Whimsical    | Alternatif wireframe/diagram sederhana       |
+| Google Fonts | Referensi tipografi                          |
+| Screenshot   | Bukti observasi layout aplikasi/website      |
+
+---
+
+## 📚 Glossary Istilah Penting
+
+| Istilah      | Penjelasan Sederhana |
+|--------------|----------------------|
+| Layout       | Susunan elemen di halaman/screen |
+| Grid         | Garis bantu untuk menyusun elemen agar rapi |
+| Visual Hierarchy | Urutan prioritas visual, mana yang harus dilihat dulu |
+| Whitespace   | Ruang kosong antar elemen, membuat desain lega |
+| Responsive   | Layout yang menyesuaikan ukuran layar |
+| Anotasi      | Catatan/penjelasan di atas desain/wireframe |
+| Wireframe    | Sketsa kasar struktur tampilan sebelum desain final |
+
+---
+
 ## 🧱 Apa Itu Layout?
 
 **Layout** adalah cara menyusun elemen dalam sebuah tampilan (page atau screen).
@@ -17,6 +42,8 @@ Layout dan visual hierarchy adalah fondasi penting dari desain antarmuka. Tanpa 
 - Gunakan grid untuk keteraturan
 - Spasi (whitespace) adalah kunci kejelasan
 - Kelompokkan elemen yang saling terkait
+
+> 🔍 Layout = peta jalan bagi mata pengguna
 
 ---
 
@@ -36,6 +63,8 @@ Visual hierarchy adalah **penekanan elemen** berdasarkan tingkat kepentingannya.
 | Spasi           | Jarak antar elemen menciptakan fokus                  |
 | Ikon/Ilustrasi  | Gunakan visual untuk memperkuat pesan utama          |
 
+> Hierarki visual = panduan mata pengguna
+
 ---
 
 ## 📐 Grid System
@@ -48,11 +77,21 @@ Gunakan grid (3, 4, 6, atau 12 kolom) untuk menyusun elemen agar:
 
 ---
 
-## 🎯 Hierarki ≠ Warna Cerah
+## 🎯 Checklist Learning Outcome
 
-Banyak desainer pemula salah kaprah: membuat semua elemen mencolok. Padahal:
-- Hierarki visual adalah tentang *perbedaan* antara elemen
-- Jangan buat semua tombol berwarna merah besar — nanti tidak ada yang menonjol
+- [ ] Memahami konsep layout dan visual hierarchy
+- [ ] Bisa membuat wireframe dengan grid dan hierarchy
+- [ ] Menggunakan tools (Figma/Whimsical) untuk wireframe
+- [ ] Menjelaskan alasan penempatan elemen (anotasi)
+- [ ] Membuat layout yang mudah dipahami pengguna awam
+
+---
+
+## 💡 Tips & Best Practice
+- Jangan takut menggunakan whitespace, desain yang lega lebih mudah dipahami
+- Mulai dari wireframe hitam putih, baru tambahkan warna jika perlu
+- Cek inspirasi layout dari aplikasi populer
+- Uji wireframe ke teman/keluarga: apa yang mereka lihat duluan?
 
 ---
 

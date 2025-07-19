@@ -7,6 +7,28 @@
 
 ---
 
+## 🛠 Tools yang Digunakan
+
+| Tool         | Keterangan                                 |
+|--------------|--------------------------------------------|
+| Figma        | Membuat wireframe, grid, anotasi visual    |
+| Whimsical    | Alternatif wireframe/diagram sederhana     |
+| Google Fonts | Referensi tipografi                        |
+| Screenshot   | Bukti observasi layout aplikasi/website    |
+
+---
+
+## ✅ Checklist Goal Exercise
+
+- [ ] Membuat wireframe low-fidelity untuk halaman profil user (mobile)
+- [ ] Membuat versi responsif untuk tablet
+- [ ] Menerapkan grid system dan visual hierarchy
+- [ ] Menjelaskan alasan penempatan elemen (anotasi)
+- [ ] (Bonus) Bandingkan layout lama vs baru aplikasi populer
+- [ ] (Bonus) Uji layout ke orang lain
+
+---
+
 ## 🎯 Tujuan Latihan
 
 - Memahami pentingnya struktur layout dalam desain

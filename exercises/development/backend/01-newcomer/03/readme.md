@@ -1,108 +1,116 @@
-# Exercise 03: Routing & File System Basics 🗂️
+# 📝 Exercise 03: Buku Tamu Komunitas – Routing & File System Sederhana
 
-> **Track**: Development\
-> **Specialty**: Backend\
-> **Level**: 🌱 Newcomer\
-> **Estimated Time**: 1.5–2.5 jam\
+> **Track**: Development  
+> **Specialty**: Backend  
+> **Level**: 🌱 Newcomer  
+> **Estimated Time**: 1.5–2.5 jam  
 > **Last Updated**: Juni 2025
 
 ---
 
-## 🎯 Tujuan Pembelajaran
+## 🧰 Tools yang Digunakan
 
-- Memahami cara kerja **routing** (pemilahan endpoint) secara manual
-- Menggunakan module `fs` untuk membaca & menulis file lokal
-- Membuat server yang menyimpan & menampilkan data dari file
-- Mengelola response status code dan header JSON
-
----
-
-## 📖 Studi Kasus
-
-> Kamu membangun server kecil untuk menyimpan dan membaca daftar pengguna. Setiap pengguna memiliki nama dan hobi. Data akan disimpan di file `data.json`. Server ini akan memiliki endpoint:
->
-> - `GET /users` → Tampilkan daftar pengguna dari file
-> - `POST /users` → Terima JSON dan simpan ke file
+| Alat      | Keterangan                                 |
+|-----------|--------------------------------------------|
+| Node.js   | Menjalankan kode JavaScript di backend     |
+| VS Code   | Editor kode dengan integrasi terminal      |
+| Terminal  | Menjalankan perintah CLI & server          |
+| Postman   | Menguji dan mengirim request ke API        |
+| curl      | Alternatif Postman untuk test API di CLI   |
 
 ---
 
-## 🛠 Tools & Setup
+## ✅ Checklist Goal Exercise
 
-| Alat    | Deskripsi                              |
-| ------- | -------------------------------------- |
-| Node.js | Runtime JavaScript                     |
-| fs      | Modul bawaan Node.js untuk file I/O    |
-| curl    | Untuk test `POST` atau gunakan Postman |
-
-### Struktur Awal
-
-```bash
-mkdir exercise-03-routing-fs
-cd exercise-03-routing-fs
-touch server.js data.json
-```
-
-Inisialisasi `data.json`:
-
-```json
-[]
-```
+- [ ] Membuat server dengan Node.js (tanpa framework)
+- [ ] Endpoint `GET /users` membaca dan menampilkan data dari file JSON
+- [ ] Endpoint `POST /users` menerima data dan menyimpan ke file JSON
+- [ ] Validasi data (harus lengkap)
+- [ ] Menggunakan status code yang sesuai (201, 400)
+- [ ] (Bonus) ID unik untuk setiap user
+- [ ] (Bonus) Log request ke `log.txt`
 
 ---
 
-## 🔧 Tugas Utama
+## 📖 Studi Kasus: Buku Tamu Digital Komunitas
 
-1. Buat server HTTP (manual, tidak pakai Express)
-2. Endpoint `GET /users`
-   - Baca isi `data.json`
-   - Kirim sebagai JSON response
-3. Endpoint `POST /users`
-   - Terima JSON `{ name, hobby }`
-   - Tambahkan ke `data.json` (append), kirim respons `201 Created`
-4. Gunakan header `Content-Type: application/json`
-5. Tambahkan validasi sederhana jika data tidak lengkap
+Kamu membuat **buku tamu digital** untuk komunitas. Setiap tamu bisa dilihat (GET /users) dan ditambah (POST /users). Data disimpan di file `data.json`. Seperti resepsionis yang mencatat dan menampilkan daftar tamu!
 
 ---
 
-## ✨ Bonus Challenge
+## 🎯 Goal Latihan
 
-- Tambahkan ID unik ke setiap data (`Date.now()` atau counter sederhana)
-- Tambahkan endpoint `GET /users/:id` (opsional)
-- Tambahkan log request sederhana ke `log.txt`
+Setelah latihan ini, kamu akan:
+- Memahami konsep routing manual di Node.js
+- Bisa mengelola data sederhana dengan file JSON
+- Membuat server yang bisa menerima dan menampilkan data
+- Siap membangun backend tanpa framework
 
 ---
 
-## 📁 Struktur File Disarankan
+## 📋 Checklist Langkah
+
+1. **Buat folder project dan file utama:**
+   ```bash
+   mkdir buku-tamu-komunitas
+   cd buku-tamu-komunitas
+   npm init -y
+   touch server.js data.json
+   ```
+2. **Buat server dengan Node.js (tanpa framework)**
+3. **Endpoint `GET /users`**
+   - Baca dan tampilkan isi `data.json` sebagai JSON
+4. **Endpoint `POST /users`**
+   - Terima data `{ name, hobby }`, simpan ke `data.json`
+   - Validasi: data harus lengkap
+   - Balas dengan status code yang sesuai (201 untuk sukses, 400 untuk error)
+5. **(Bonus) Tambahkan ID unik untuk setiap user**
+6. **(Bonus) Tambahkan log request ke `log.txt`**
+
+---
+
+## 🗂️ Struktur File Disarankan
 
 ```
-exercise-03-routing-fs/
+buku-tamu-komunitas/
 ├── server.js
 ├── data.json
-├── log.txt         ← (optional bonus)
+├── log.txt         ← (bonus)
 ├── README.md
 └── fundamental.md
 ```
 
 ---
 
-## ✅ Submission
+## 🧪 Contoh Output & Data
 
+**Contoh data di `data.json`:**
+```json
+[
+  { "id": 1, "name": "Raka", "hobby": "Backend" }
+]
 ```
-submissions/backend/[username]/exercise-03-routing-fs/
-├── server.js
-├── data.json
-└── REFLECTION.md
+**Tampilan di terminal:**
 ```
+User baru: Raka (Backend)
+```
+
+---
+
+## 💡 Tips Pro & Troubleshooting
+- Jika data tidak tersimpan, cek path dan format JSON
+- Gunakan try-catch untuk error handling file
+- Cek status code di response
+- Gunakan Postman/curl untuk test endpoint
 
 ---
 
 ## 🔗 Referensi
-
-- [Node.js fs module](https://nodejs.org/api/fs.html)
+- [Node.js File System](https://nodejs.org/api/fs.html)
 - [MDN JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
-- [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+- [HTTP Request Handling in Node.js](https://www.digitalocean.com/community/tutorials/)
 
 ---
 
-> "Routing & filesystem adalah fondasi sebelum masuk framework. Menguasainya = memahami aliran data secara penuh."
+> "Routing itu seperti resepsionis kantor: setiap permintaan diarahkan ke ruangan yang tepat. Data di file = catatan tamu yang selalu bisa dibuka kembali!"
 

@@ -7,6 +7,30 @@
 
 ---
 
+## 🛠 Tools yang Digunakan
+
+| Tool         | Keterangan                                 |
+|--------------|--------------------------------------------|
+| Figma        | Membuat style guide, palet warna, preview  |
+| Google Fonts | Referensi dan pairing tipografi            |
+| Fontpair.co  | Inspirasi kombinasi font                   |
+| Coolors.co   | Generator palet warna                      |
+| Screenshot   | Bukti observasi brand lain                 |
+
+---
+
+## ✅ Checklist Goal Exercise
+
+- [ ] Membuat palet warna dasar (primary, secondary, neutral, alert)
+- [ ] Memilih kombinasi tipografi (heading & body)
+- [ ] Membuat file style-guide mini (Figma/PDF)
+- [ ] Menjelaskan alasan pemilihan warna & font sesuai brand
+- [ ] (Bonus) Tambahkan dark mode version
+- [ ] (Bonus) Sertakan inspirasi dari 2 brand serupa
+- [ ] (Bonus) Uji kontras warna di WebAIM
+
+---
+
 ## 🎯 Tujuan Latihan
 
 - Mengenal prinsip pemilihan warna dan font dalam desain

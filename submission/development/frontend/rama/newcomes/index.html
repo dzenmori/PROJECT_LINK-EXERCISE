@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <title>Profil Rama Interaktif</title>
+    <link rel="icon" href="https://www.google.com/s2/favicons?domain=github.com" type="image/x-icon">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            text-align: center;
+            margin: 40px;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+        }
+
+        .profile-container {
+            background-color: #ffffff;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: background-color 0.3s;
+        }
+
+        h1 {
+            color: #0056b3;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #0056b3;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #e9ecef;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Styles for New Elements */
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin-right: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 60%;
+        }
+
+        #greeting {
+            margin-top: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        #clock {
+            font-size: 1.5em;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #0056b3;
+        }
+        
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        body.dark-mode .profile-container {
+            background-color: #1e1e1e;
+        }
+        
+        body.dark-mode h1 {
+            color: #bb86fc;
+        }
+
+        body.dark-mode #clock {
+            color: #bb86fc;
+        }
+
+        body.dark-mode img {
+            border-color: #bb86fc;
+        }
+
+        body.dark-mode a {
+            color: #03dac6;
+        }
+
+        body.dark-mode li {
+            background-color: #333333;
+        }
+
+        body.dark-mode button {
+            background-color: #bb86fc;
+        }
+
+        body.dark-mode button:hover {
+            background-color: #3700b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <button id="themeToggleBtn">Toggle Light/Dark Mode</button>
+        <div id="clock"></div>
+
+        <img 
+            src="https://png.pngtree.com/png-clipart/20230226/original/pngtree-cute-cartoon-ducks-png-image_8965587.png" 
+            alt="Cute cartoon ducks" 
+        >
+
+        <h1>Rama Ferdiansyah</h1>
+
+        <p>
+            Ini adalah deskripsi singkat tentang saya. Saya sedang belajar dasar-dasar HTML, CSS, & JavaScript. 
+        </p>
+
+        <button id="changeColorBtn">Ubah Warna Background</button>
+
+        <p>
+            Kunjungi profil saya di <a href="https://github.com/TenKai231" target="_blank">GitHub</a>.
+        </p>
+
+        <div style="margin-top: 20px;">
+            <input type="text" id="nameInput" placeholder="Masukkan nama Anda">
+            <button id="submitNameBtn">Kirim</button>
+            <p id="greeting"></p>
+        </div>
+
+        <h2>Hobi Saya</h2>
+        <ul>
+            <li>Membaca buku</li>
+            <li>bermain game</li>
+            <li>Mendengarkan musik</li>
+        </ul>
+    </div>
+
+    <script>
+        // --- Interactivity Logic ---
+
+        // 1. Change Background Color
+        document.getElementById("changeColorBtn").onclick = function() {
+            const colors = ["#f0f2f5", "#e0f7fa", "#ffebee", "#f3e5f5", "#e8f5e9"];
+            const chosen = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = chosen;
+            alert("Warna background telah diubah!");
+        };
+
+        // 2. Display Greeting
+        document.getElementById("submitNameBtn").onclick = function() {
+            const nameInput = document.getElementById("nameInput");
+            const greetingElement = document.getElementById("greeting");
+            const name = nameInput.value;
+
+            if (name.trim() !== "") {
+                greetingElement.textContent = `Halo, ${name}! Selamat datang.`;
+                nameInput.value = ""; // Clear input after submission
+            } else {
+                greetingElement.textContent = "Mohon masukkan nama Anda.";
+            }
+        };
+
+        // --- Bonus Challenge Logic ---
+
+        // 3. Real-time Digital Clock
+        function updateClock() {
+            const clockElement = document.getElementById("clock");
+            const now = new Date();
+            // PadStart ensures the number has 2 digits (e.g., 09 instead of 9)
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateClock, 1000); // Update the clock every second
+        updateClock(); // Initial call to display clock immediately
+
+        // 4. Light/Dark Mode Toggle
+        document.getElementById("themeToggleBtn").onclick = function() {
+            document.body.classList.toggle("dark-mode");
+        };
+
+    </script>
+
+</body>
+</html>

@@ -7,6 +7,27 @@
 
 ---
 
+## 🛠 Tools yang Digunakan
+
+| Tool         | Keterangan                                 |
+|--------------|--------------------------------------------|
+| Figma        | Membuat anotasi visual, wireframe, analisis|
+| Whimsical    | Alternatif wireframe/diagram sederhana     |
+| Google Fonts | Referensi tipografi                        |
+| Screenshot   | Bukti observasi aplikasi/website           |
+
+---
+
+## ✅ Checklist Goal Exercise
+
+- [ ] Mengamati dan membedakan elemen UI dan UX pada aplikasi nyata
+- [ ] Membuat analisis observasi dalam dokumen singkat
+- [ ] Menyertakan anotasi visual (Figma/Whimsical/manual)
+- [ ] Menjelaskan kelebihan/kekurangan UI dan UX yang ditemukan
+- [ ] (Bonus) Membandingkan dua aplikasi serupa
+
+---
+
 ## 🎯 Tujuan Latihan
 
 - Memahami perbedaan mendasar antara UI dan UX
